@@ -28,12 +28,13 @@
 			<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Connecting Talent with Opportunity!</h1>
 			<p class="lead">Welcome to Ispani.org, an online platform designed to connect job seekers with businesses looking for skilled professionals. Whether you're searching for meaningful career opportunities or seeking top talent to drive your business forward, we provide the tools and connections to make it happen. Our mission is to bridge the gap between motivated individuals and companies committed to growth and success.</p>
 			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-				<form class="d-flex" method="post" action="/about">	
-					<button type="submit" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</button>
-				</form>
-				<form class="d-flex" method="post" action="/apply">	
-					<button type="submit" class="btn btn-outline-secondary btn-lg px-4">Apply now</button>
-				</form>
+				<a href="{{ url_for('about') }}" class="btn btn-primary btn-lg px-4 me-md-2">
+					Learn More
+				</a>
+
+				<a href="{{ url_for('apply') }}" class="btn btn-outline-secondary btn-lg px-4">
+					Apply now
+				</a>
 			</div>
 		</div>
 	</div>

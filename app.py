@@ -23,7 +23,7 @@ def about():
 
 # Apply
 @app.route("/apply")
-def resources():
+def apply():
     return render_template("apply.html")
     
 # Favicon
